@@ -212,7 +212,7 @@
             this.LblTeam8.AutoSize = true;
             this.LblTeam8.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LblTeam8.ForeColor = System.Drawing.Color.White;
-            this.LblTeam8.Location = new System.Drawing.Point(510, 437);
+            this.LblTeam8.Location = new System.Drawing.Point(499, 437);
             this.LblTeam8.Name = "LblTeam8";
             this.LblTeam8.Size = new System.Drawing.Size(134, 33);
             this.LblTeam8.TabIndex = 19;
@@ -236,7 +236,7 @@
             this.LblTeam6.AutoSize = true;
             this.LblTeam6.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LblTeam6.ForeColor = System.Drawing.Color.White;
-            this.LblTeam6.Location = new System.Drawing.Point(509, 320);
+            this.LblTeam6.Location = new System.Drawing.Point(498, 320);
             this.LblTeam6.Name = "LblTeam6";
             this.LblTeam6.Size = new System.Drawing.Size(150, 33);
             this.LblTeam6.TabIndex = 17;
@@ -260,7 +260,7 @@
             this.LblTeam4.AutoSize = true;
             this.LblTeam4.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LblTeam4.ForeColor = System.Drawing.Color.White;
-            this.LblTeam4.Location = new System.Drawing.Point(509, 199);
+            this.LblTeam4.Location = new System.Drawing.Point(498, 199);
             this.LblTeam4.Name = "LblTeam4";
             this.LblTeam4.Size = new System.Drawing.Size(135, 33);
             this.LblTeam4.TabIndex = 15;
@@ -307,7 +307,7 @@
             this.LblTeam2.AutoSize = true;
             this.LblTeam2.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LblTeam2.ForeColor = System.Drawing.Color.White;
-            this.LblTeam2.Location = new System.Drawing.Point(510, 76);
+            this.LblTeam2.Location = new System.Drawing.Point(499, 76);
             this.LblTeam2.Name = "LblTeam2";
             this.LblTeam2.Size = new System.Drawing.Size(127, 33);
             this.LblTeam2.TabIndex = 10;
@@ -328,10 +328,11 @@
             // LossCheckBox3
             // 
             this.LossCheckBox3.AutoSize = true;
+            this.LossCheckBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LossCheckBox3.ForeColor = System.Drawing.Color.White;
             this.LossCheckBox3.Location = new System.Drawing.Point(392, 501);
             this.LossCheckBox3.Name = "LossCheckBox3";
-            this.LossCheckBox3.Size = new System.Drawing.Size(67, 21);
+            this.LossCheckBox3.Size = new System.Drawing.Size(76, 24);
             this.LossCheckBox3.TabIndex = 8;
             this.LossCheckBox3.Text = "LOSS";
             this.LossCheckBox3.UseVisualStyleBackColor = true;
@@ -339,10 +340,11 @@
             // LossCheckBox2
             // 
             this.LossCheckBox2.AutoSize = true;
+            this.LossCheckBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LossCheckBox2.ForeColor = System.Drawing.Color.White;
             this.LossCheckBox2.Location = new System.Drawing.Point(392, 381);
             this.LossCheckBox2.Name = "LossCheckBox2";
-            this.LossCheckBox2.Size = new System.Drawing.Size(67, 21);
+            this.LossCheckBox2.Size = new System.Drawing.Size(76, 24);
             this.LossCheckBox2.TabIndex = 8;
             this.LossCheckBox2.Text = "LOSS";
             this.LossCheckBox2.UseVisualStyleBackColor = true;
@@ -350,10 +352,11 @@
             // DrawCheckBox3
             // 
             this.DrawCheckBox3.AutoSize = true;
+            this.DrawCheckBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.DrawCheckBox3.ForeColor = System.Drawing.Color.White;
             this.DrawCheckBox3.Location = new System.Drawing.Point(302, 501);
             this.DrawCheckBox3.Name = "DrawCheckBox3";
-            this.DrawCheckBox3.Size = new System.Drawing.Size(72, 21);
+            this.DrawCheckBox3.Size = new System.Drawing.Size(83, 24);
             this.DrawCheckBox3.TabIndex = 7;
             this.DrawCheckBox3.Text = "DRAW";
             this.DrawCheckBox3.UseVisualStyleBackColor = true;
@@ -361,10 +364,11 @@
             // DrawCheckBox2
             // 
             this.DrawCheckBox2.AutoSize = true;
+            this.DrawCheckBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.DrawCheckBox2.ForeColor = System.Drawing.Color.White;
-            this.DrawCheckBox2.Location = new System.Drawing.Point(302, 379);
+            this.DrawCheckBox2.Location = new System.Drawing.Point(302, 381);
             this.DrawCheckBox2.Name = "DrawCheckBox2";
-            this.DrawCheckBox2.Size = new System.Drawing.Size(72, 21);
+            this.DrawCheckBox2.Size = new System.Drawing.Size(83, 24);
             this.DrawCheckBox2.TabIndex = 7;
             this.DrawCheckBox2.Text = "DRAW";
             this.DrawCheckBox2.UseVisualStyleBackColor = true;
@@ -372,10 +376,11 @@
             // LossCheckBox1
             // 
             this.LossCheckBox1.AutoSize = true;
+            this.LossCheckBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LossCheckBox1.ForeColor = System.Drawing.Color.White;
             this.LossCheckBox1.Location = new System.Drawing.Point(392, 259);
             this.LossCheckBox1.Name = "LossCheckBox1";
-            this.LossCheckBox1.Size = new System.Drawing.Size(67, 21);
+            this.LossCheckBox1.Size = new System.Drawing.Size(76, 24);
             this.LossCheckBox1.TabIndex = 8;
             this.LossCheckBox1.Text = "LOSS";
             this.LossCheckBox1.UseVisualStyleBackColor = true;
@@ -383,10 +388,11 @@
             // DrawCheckBox1
             // 
             this.DrawCheckBox1.AutoSize = true;
+            this.DrawCheckBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.DrawCheckBox1.ForeColor = System.Drawing.Color.White;
             this.DrawCheckBox1.Location = new System.Drawing.Point(302, 259);
             this.DrawCheckBox1.Name = "DrawCheckBox1";
-            this.DrawCheckBox1.Size = new System.Drawing.Size(72, 21);
+            this.DrawCheckBox1.Size = new System.Drawing.Size(83, 24);
             this.DrawCheckBox1.TabIndex = 7;
             this.DrawCheckBox1.Text = "DRAW";
             this.DrawCheckBox1.UseVisualStyleBackColor = true;
@@ -394,10 +400,11 @@
             // WinCheckBox3
             // 
             this.WinCheckBox3.AutoSize = true;
+            this.WinCheckBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.WinCheckBox3.ForeColor = System.Drawing.Color.White;
             this.WinCheckBox3.Location = new System.Drawing.Point(213, 501);
             this.WinCheckBox3.Name = "WinCheckBox3";
-            this.WinCheckBox3.Size = new System.Drawing.Size(56, 21);
+            this.WinCheckBox3.Size = new System.Drawing.Size(63, 24);
             this.WinCheckBox3.TabIndex = 6;
             this.WinCheckBox3.Text = "WIN";
             this.WinCheckBox3.UseVisualStyleBackColor = true;
@@ -405,10 +412,11 @@
             // WinCheckBox2
             // 
             this.WinCheckBox2.AutoSize = true;
+            this.WinCheckBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.WinCheckBox2.ForeColor = System.Drawing.Color.White;
             this.WinCheckBox2.Location = new System.Drawing.Point(213, 381);
             this.WinCheckBox2.Name = "WinCheckBox2";
-            this.WinCheckBox2.Size = new System.Drawing.Size(56, 21);
+            this.WinCheckBox2.Size = new System.Drawing.Size(63, 24);
             this.WinCheckBox2.TabIndex = 6;
             this.WinCheckBox2.Text = "WIN";
             this.WinCheckBox2.UseVisualStyleBackColor = true;
@@ -416,10 +424,11 @@
             // LossCheckBox
             // 
             this.LossCheckBox.AutoSize = true;
+            this.LossCheckBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LossCheckBox.ForeColor = System.Drawing.Color.White;
             this.LossCheckBox.Location = new System.Drawing.Point(392, 143);
             this.LossCheckBox.Name = "LossCheckBox";
-            this.LossCheckBox.Size = new System.Drawing.Size(67, 21);
+            this.LossCheckBox.Size = new System.Drawing.Size(76, 24);
             this.LossCheckBox.TabIndex = 8;
             this.LossCheckBox.Text = "LOSS";
             this.LossCheckBox.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -428,10 +437,11 @@
             // WinCheckBox1
             // 
             this.WinCheckBox1.AutoSize = true;
+            this.WinCheckBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.WinCheckBox1.ForeColor = System.Drawing.Color.White;
             this.WinCheckBox1.Location = new System.Drawing.Point(213, 259);
             this.WinCheckBox1.Name = "WinCheckBox1";
-            this.WinCheckBox1.Size = new System.Drawing.Size(56, 21);
+            this.WinCheckBox1.Size = new System.Drawing.Size(63, 24);
             this.WinCheckBox1.TabIndex = 6;
             this.WinCheckBox1.Text = "WIN";
             this.WinCheckBox1.UseVisualStyleBackColor = true;
@@ -439,10 +449,11 @@
             // DrawCheckBox
             // 
             this.DrawCheckBox.AutoSize = true;
+            this.DrawCheckBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.DrawCheckBox.ForeColor = System.Drawing.Color.White;
             this.DrawCheckBox.Location = new System.Drawing.Point(302, 143);
             this.DrawCheckBox.Name = "DrawCheckBox";
-            this.DrawCheckBox.Size = new System.Drawing.Size(72, 21);
+            this.DrawCheckBox.Size = new System.Drawing.Size(83, 24);
             this.DrawCheckBox.TabIndex = 7;
             this.DrawCheckBox.Text = "DRAW";
             this.DrawCheckBox.UseVisualStyleBackColor = true;
@@ -450,10 +461,11 @@
             // WinCheckBox
             // 
             this.WinCheckBox.AutoSize = true;
+            this.WinCheckBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.WinCheckBox.ForeColor = System.Drawing.Color.White;
             this.WinCheckBox.Location = new System.Drawing.Point(213, 143);
             this.WinCheckBox.Name = "WinCheckBox";
-            this.WinCheckBox.Size = new System.Drawing.Size(56, 21);
+            this.WinCheckBox.Size = new System.Drawing.Size(63, 24);
             this.WinCheckBox.TabIndex = 6;
             this.WinCheckBox.Text = "WIN";
             this.WinCheckBox.UseVisualStyleBackColor = true;
@@ -732,6 +744,7 @@
             this.TeamWinAmountFour.Name = "TeamWinAmountFour";
             this.TeamWinAmountFour.Size = new System.Drawing.Size(119, 27);
             this.TeamWinAmountFour.TabIndex = 2;
+            this.TeamWinAmountFour.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TeamWinAmountTwo_KeyPress);
             // 
             // TeamWinAmountThree
             // 
@@ -741,6 +754,7 @@
             this.TeamWinAmountThree.Name = "TeamWinAmountThree";
             this.TeamWinAmountThree.Size = new System.Drawing.Size(119, 27);
             this.TeamWinAmountThree.TabIndex = 2;
+            this.TeamWinAmountThree.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TeamWinAmountTwo_KeyPress);
             // 
             // TeamWinAmountTwo
             // 
@@ -750,6 +764,7 @@
             this.TeamWinAmountTwo.Name = "TeamWinAmountTwo";
             this.TeamWinAmountTwo.Size = new System.Drawing.Size(119, 27);
             this.TeamWinAmountTwo.TabIndex = 2;
+            this.TeamWinAmountTwo.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TeamWinAmountTwo_KeyPress);
             // 
             // TeamWinAmountOne
             // 
@@ -759,6 +774,7 @@
             this.TeamWinAmountOne.Name = "TeamWinAmountOne";
             this.TeamWinAmountOne.Size = new System.Drawing.Size(119, 27);
             this.TeamWinAmountOne.TabIndex = 2;
+            this.TeamWinAmountOne.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TeamWinAmountOne_KeyPress);
             // 
             // TeamToWin4
             // 
@@ -837,7 +853,7 @@
             // 
             // timer1
             // 
-            this.timer1.Interval = 200;
+            this.timer1.Interval = 1;
             this.timer1.Tick += new System.EventHandler(this.Timer1_Tick);
             // 
             // Tournament

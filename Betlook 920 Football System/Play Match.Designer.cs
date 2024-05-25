@@ -40,6 +40,8 @@
             this.UserTeamLabel = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.label3 = new System.Windows.Forms.Label();
+            this.BetAmountTextBox = new System.Windows.Forms.TextBox();
             this.iconButton1 = new FontAwesome.Sharp.IconButton();
             this.label24 = new System.Windows.Forms.Label();
             this.TeamToWin = new System.Windows.Forms.TextBox();
@@ -54,8 +56,6 @@
             this.UserPictureBox = new System.Windows.Forms.PictureBox();
             this.OppPictureBox = new System.Windows.Forms.PictureBox();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.label3 = new System.Windows.Forms.Label();
-            this.BetAmountTextBox = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -197,6 +197,28 @@
             this.panel3.Size = new System.Drawing.Size(1126, 349);
             this.panel3.TabIndex = 20;
             // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.Black;
+            this.label3.Location = new System.Drawing.Point(476, 105);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(151, 22);
+            this.label3.TabIndex = 30;
+            this.label3.Text = "Enter Bet Amount";
+            // 
+            // BetAmountTextBox
+            // 
+            this.BetAmountTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BetAmountTextBox.Location = new System.Drawing.Point(457, 130);
+            this.BetAmountTextBox.MaxLength = 12;
+            this.BetAmountTextBox.Multiline = true;
+            this.BetAmountTextBox.Name = "BetAmountTextBox";
+            this.BetAmountTextBox.Size = new System.Drawing.Size(188, 44);
+            this.BetAmountTextBox.TabIndex = 29;
+            this.BetAmountTextBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.BetAmountTextBox_KeyPress);
+            // 
             // iconButton1
             // 
             this.iconButton1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -219,9 +241,9 @@
             this.label24.ForeColor = System.Drawing.Color.Black;
             this.label24.Location = new System.Drawing.Point(476, 18);
             this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(190, 22);
+            this.label24.Size = new System.Drawing.Size(181, 22);
             this.label24.TabIndex = 27;
-            this.label24.Text = "Which Teams Will WIn";
+            this.label24.Text = "Which Team Will WIn";
             // 
             // TeamToWin
             // 
@@ -304,8 +326,8 @@
             "Tottenham Hotspur Stadium (Tottenham Hotspur)",
             "Goodison Park (Everton)",
             "St James\' Park (Newcastle United)",
-            "King Power Stadium (Leicester City):",
-            "Molineux Stadium (Wolverhampton Wanderers)"});
+            "King Power Stadium",
+            "Molineux Stadium "});
             this.StadiumComboBox.Location = new System.Drawing.Point(735, 130);
             this.StadiumComboBox.Name = "StadiumComboBox";
             this.StadiumComboBox.Size = new System.Drawing.Size(369, 44);
@@ -356,27 +378,6 @@
             // timer1
             // 
             this.timer1.Tick += new System.EventHandler(this.Timer1_Tick);
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.Black;
-            this.label3.Location = new System.Drawing.Point(476, 105);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(151, 22);
-            this.label3.TabIndex = 30;
-            this.label3.Text = "Enter Bet Amount";
-            // 
-            // BetAmountTextBox
-            // 
-            this.BetAmountTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BetAmountTextBox.Location = new System.Drawing.Point(457, 130);
-            this.BetAmountTextBox.MaxLength = 12;
-            this.BetAmountTextBox.Multiline = true;
-            this.BetAmountTextBox.Name = "BetAmountTextBox";
-            this.BetAmountTextBox.Size = new System.Drawing.Size(188, 44);
-            this.BetAmountTextBox.TabIndex = 29;
             // 
             // Play_Match
             // 

@@ -236,18 +236,18 @@ namespace Betlook_920_Football_System
                 {
                     result = $"{homeTeam} wins!";
                     WinAmount = double.Parse(TeamWinAmountOne.Text);
-                    SetWinningTeamLabels(homeTeam);
+
                 }
                 else if (DrawCheckBox.Checked)
                 {
                     result = "It's a draw!";
-                    SetWinningTeamLabels("");
+            
                 }
                 else if (LossCheckBox.Checked)
                 {
                     result = $"{awayTeam} wins!";
                     WinAmount = double.Parse(TeamWinAmountOne.Text);
-                    SetWinningTeamLabels(awayTeam);
+               
                 }
 
                 else
@@ -591,87 +591,124 @@ namespace Betlook_920_Football_System
                     return;
                 }
                 if (!double.TryParse(TeamWinAmountFour.Text, out textAmount4Value))
-                {
-                    MessageBox.Show("Invalid value in amount textbox.");
+                {   
+                        MessageBox.Show("Invalid value in amount textbox.");
                     return;
                 }
 
                 double totalBetEarnings = 0;
                 double totalBetLosses = 0;
 
-                if (textBox1IntValue > textBox2IntValue )
+
+                if (textBox1IntValue > textBox2IntValue)
                 {
                     TeamToWin1.Text = LblTeam1.Text + " wins!";
-                    totalBetEarnings += textAmount1Value;
+                    if ((LblTeam1.Checked && WinCheckBox.Checked) || (LblTeam1.Checked && LossCheckBox.Checked))
+                        totalBetEarnings += textAmount1Value;
+                    else
+                        totalBetLosses += textAmount1Value;
                 }
-                else if (textBox1IntValue < textBox2IntValue )
+                else if (textBox1IntValue < textBox2IntValue)
                 {
                     TeamToWin1.Text = LblTeam2.Text + " wins!";
-                    totalBetLosses += textAmount1Value * 1.5;
+                    if (LblTeam1.Checked && WinCheckBox.Checked)
+                        totalBetLosses += textAmount1Value;
+                    else if ((LblTeam2.Checked && WinCheckBox.Checked) || (LblTeam1.Checked && LossCheckBox.Checked))
+                        totalBetEarnings += textAmount1Value;
                 }
                 else
                 {
                     TeamToWin1.Text = "It's a draw!";
-                    double drawBet = textAmount1Value / 2; // Calculate 1/4th of the bet
-                    totalBetEarnings += (textAmount1Value - drawBet);
-                    totalBetLosses += drawBet;
+                    if ((LblTeam1.Checked && DrawCheckBox.Checked) || (LblTeam2.Checked && DrawCheckBox.Checked))
+                        totalBetEarnings += textAmount1Value;
+                    else
+                        totalBetLosses += textAmount1Value;
                 }
 
-                if (textBox3IntValue > textBox4IntValue ) 
+
+                if (textBox3IntValue > textBox4IntValue)
                 {
                     TeamToWin2.Text = LblTeam3.Text + " wins!";
-                    totalBetEarnings += textAmount2Value;
+                    if (LblTeam3.Checked && WinCheckBox.Checked)
+                        totalBetEarnings += textAmount2Value;
+                    else
+                        totalBetLosses += textAmount2Value;
                 }
                 else if (textBox3IntValue < textBox4IntValue)
                 {
                     TeamToWin2.Text = LblTeam4.Text + " wins!";
-                    totalBetLosses += textAmount2Value * 1.5;
+                    if (LblTeam3.Checked && WinCheckBox.Checked)
+                        totalBetLosses += textAmount2Value;
+                    else
+                        totalBetEarnings += textAmount2Value;
                 }
                 else
                 {
                     TeamToWin2.Text = "It's a draw!";
-                    double drawBet = textAmount2Value / 2; // Calculate 1/4th of the bet
-                    totalBetEarnings += (textAmount2Value - drawBet);
-                    totalBetLosses += drawBet;
+                    if ((LblTeam3.Checked && DrawCheckBox1.Checked) || (LblTeam4.Checked && DrawCheckBox1.Checked))
+                    {
+                        totalBetEarnings += textAmount2Value;
+                        totalBetLosses -= textAmount2Value;
+                    }
                 }
-
 
                 if (textBox5IntValue > textBox6IntValue)
                 {
                     TeamToWin3.Text = LblTeam5.Text + " wins!";
-                    totalBetEarnings += textAmount3Value;
+                    if (LblTeam5.Checked)
+                        totalBetEarnings += textAmount3Value;
+                    else
+                        totalBetLosses += textAmount3Value;
                 }
                 else if (textBox5IntValue < textBox6IntValue)
                 {
                     TeamToWin3.Text = LblTeam6.Text + " wins!";
-                    totalBetLosses += textAmount3Value * 1.5;
+                    if (LblTeam5.Checked)
+                        totalBetLosses += textAmount3Value;
+                    else
+                        totalBetEarnings += textAmount3Value;
                 }
                 else
                 {
                     TeamToWin3.Text = "It's a draw!";
-                    double drawBet = textAmount3Value / 2; // Calculate 1/4th of the bet
-                    totalBetEarnings += (textAmount3Value - drawBet);
-                    totalBetLosses += drawBet;
+                    if ((LblTeam5.Checked && DrawCheckBox2.Checked) || (LblTeam6.Checked && DrawCheckBox2.Checked))
+                    {
+                        totalBetEarnings += textAmount3Value;
+                        totalBetLosses -= textAmount3Value;
+                    }
                 }
-  
 
                 if (textBox7IntValue > textBox8IntValue)
                 {
                     TeamToWin4.Text = LblTeam7.Text + " wins!";
-                    totalBetEarnings += textAmount4Value;
+                    if (LblTeam7.Checked)
+                        totalBetEarnings += textAmount4Value;
+                    else
+                        totalBetLosses += textAmount4Value;
                 }
                 else if (textBox7IntValue < textBox8IntValue)
                 {
                     TeamToWin4.Text = LblTeam8.Text + " wins!";
-                    totalBetLosses += textAmount4Value * 1.5;
+                    if (LblTeam7.Checked)
+                        totalBetLosses += textAmount4Value;
+                    else
+                        totalBetEarnings += textAmount4Value;
                 }
                 else
                 {
                     TeamToWin4.Text = "It's a draw!";
-                    double drawBet = textAmount4Value / 2; // Calculate 1/4th of the bet
-                    totalBetEarnings += (textAmount4Value - drawBet);
-                    totalBetLosses += drawBet;
+                    if ((LblTeam7.Checked && DrawCheckBox3.Checked) || (LblTeam8.Checked && DrawCheckBox3.Checked))
+                    {
+                        totalBetEarnings += textAmount4Value;
+
+                    }
+                    else
+                    {
+                        totalBetLosses += textAmount4Value;
+                    }
                 }
+
+
 
                 decimal accountBalance = Convert.ToDecimal(UserAccountBalanceTextBox.Text);
                 double newAccountBalance =  Convert.ToDouble(accountBalance) - totalBetLosses + totalBetEarnings;
@@ -762,6 +799,19 @@ namespace Betlook_920_Football_System
             Hide();
             Profile profile = new Profile();
             profile.Show();
+        }
+
+        private void TeamWinAmountOne_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if ((!char.IsNumber(e.KeyChar)) && (!char.IsControl(e.KeyChar)))
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void TeamWinAmountTwo_KeyPress(object sender, KeyPressEventArgs e)
+        {
+
         }
     }
 }

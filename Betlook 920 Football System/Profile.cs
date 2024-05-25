@@ -1,11 +1,14 @@
-﻿using System;
+﻿using Betlook_920_Football_System;
+using System;
 using System.Data.SqlClient;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel;
 
 namespace BetLook_920_Football
 {
     public partial class Profile : Form
     {
+        string Username = Login_Form.Username;
         public Profile()
         {
             InitializeComponent();
@@ -13,7 +16,6 @@ namespace BetLook_920_Football
 
         private void Profile_Load(object sender, EventArgs e)
         {
-            string Username = Login_Form.Username;
             try
             {
                 using (SqlConnection connection = new SqlConnection("Data Source=.\\SQLEXPRESS;Initial Catalog=Betlook;Integrated Security=True"))
@@ -45,6 +47,29 @@ namespace BetLook_920_Football
                 MessageBox.Show(ex.Message);
                 // Handle the exception (e.g., log the error message, display a user-friendly message)
             }
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            SqlConnection con = new SqlConnection();
+            con.ConnectionString = "Data Source=.\\SQLEXPRESS;Initial Catalog=Betlook;Integrated Security=True";
+            con.Open();
+            SqlCommand cmd = new SqlCommand("SELECT UserRole FROM SignUp WHERE Username = '" + Username + "'", con);
+            string userRole = cmd.ExecuteScalar().ToString();
+
+            if (userRole == "User")
+            {
+                Hide();
+                HomeSelection homeSelection = new HomeSelection();
+                homeSelection.Show();
+            }
+            else if (userRole == "Admin")
+            {
+                Hide();
+                AdminHomeSelection adminHomeSelection = new AdminHomeSelection();
+                adminHomeSelection.Show();
+            }
+            con.Close();
         }
     }
 }

@@ -101,10 +101,10 @@
     <Compile Include="Admin Control\AdminHomeSelection.Designer.cs">
       <DependentUpon>AdminHomeSelection.cs</DependentUpon>
     </Compile>
-    <Compile Include="Bank Statement.cs">
+    <Compile Include="User Controls\Bank Statement.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Bank Statement.Designer.cs">
+    <Compile Include="User Controls\Bank Statement.Designer.cs">
       <DependentUpon>Bank Statement.cs</DependentUpon>
     </Compile>
     <Compile Include="OpenWeather.cs" />
@@ -120,10 +120,10 @@
     <Compile Include="Choose Teams.Designer.cs">
       <DependentUpon>Choose Teams.cs</DependentUpon>
     </Compile>
-    <Compile Include="HomeSelection.cs">
+    <Compile Include="User Controls\HomeSelection.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="HomeSelection.designer.cs">
+    <Compile Include="User Controls\HomeSelection.designer.cs">
       <DependentUpon>HomeSelection.cs</DependentUpon>
     </Compile>
     <Compile Include="Login Form.cs">
@@ -212,7 +212,7 @@
     <EmbeddedResource Include="Admin Control\AdminHomeSelection.resx">
       <DependentUpon>AdminHomeSelection.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Bank Statement.resx">
+    <EmbeddedResource Include="User Controls\Bank Statement.resx">
       <DependentUpon>Bank Statement.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Password Reset.resx">
@@ -221,7 +221,7 @@
     <EmbeddedResource Include="Choose Teams.resx">
       <DependentUpon>Choose Teams.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="HomeSelection.resx">
+    <EmbeddedResource Include="User Controls\HomeSelection.resx">
       <DependentUpon>HomeSelection.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Login Form.resx">
@@ -419,9 +419,7 @@
   <ItemGroup>
     <None Include="Resources\Football pitch.jpg" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="User Controls\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <None Include="Resources\Admin_Logo.png" />
   </ItemGroup>

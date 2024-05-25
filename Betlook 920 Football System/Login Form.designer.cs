@@ -62,7 +62,7 @@
             this.panel2.ForeColor = System.Drawing.SystemColors.Control;
             this.panel2.Location = new System.Drawing.Point(677, 66);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(534, 520);
+            this.panel2.Size = new System.Drawing.Size(534, 503);
             this.panel2.TabIndex = 1;
             // 
             // checkBox1

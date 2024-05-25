@@ -120,8 +120,8 @@ namespace Betlook_920_Football_System
                         ChosenImage = Properties.Resources.Everton_Logo;
                         ShowForm();
                         break;
-                    case "Leicster City":
-                        ChosenTeam = "Leicster City";
+                    case "Leicester City":
+                        ChosenTeam = "Leicester City";
                         ChosenImage = Properties.Resources.leicester_city_fc_logo_FD9C3CA26E_seeklogo_com;
                         ShowForm();
                         break;

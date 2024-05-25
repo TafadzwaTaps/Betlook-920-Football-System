@@ -13,7 +13,7 @@ namespace Betlook_920_Football_System
     public partial class Play_Match : Form
     {
         string Username = Login_Form.Username;
-        private readonly RestClient restClient = new RestClient("https://api.openweathermap.org/data/2.5/weather?q=Rzeszow&appid=ccef0127848996431ec751a199c5f956");
+        private readonly RestClient restClient = new RestClient("https://api.openweathermap.org/data/2.5/weather?q=Rzeszow&appid=222105add318d24ebb985a15b2c4b239");
         public Play_Match()
         {
             InitializeComponent();
@@ -123,10 +123,10 @@ namespace Betlook_920_Football_System
                 case "St James' Park (Newcastle United)":
                     // Code for St James' Park stadium
                     break;
-                case "King Power Stadium (Leicester City)":
+                case "King Power Stadium":
                     // Code for King Power Stadium
                     break;
-                case "Molineux Stadium (Wolverhampton Wanderers)":
+                case "Molineux Stadium":
                     // Code for Molineux Stadium
                     break;
                 default:
@@ -372,6 +372,7 @@ namespace Betlook_920_Football_System
                 {
                     var weatherData = JsonConvert.DeserializeObject<Coordinate>(response.Content);
                     var temperature = weatherData.Main.Temp;
+                    var cityName = weatherData.Name;
                     foreach (var weather in weatherData.Weather)
                     {
                         var weatherType = weather.Main;
@@ -552,6 +553,14 @@ namespace Betlook_920_Football_System
             Hide();
             HomeSelection homeSelection = new HomeSelection();
             homeSelection.Show();
+        }
+
+        private void BetAmountTextBox_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if ((!char.IsNumber(e.KeyChar)) && (!char.IsControl(e.KeyChar)))
+            {
+                e.Handled = true;
+            }
         }
     }
 }
